@@ -1,0 +1,42 @@
+{
+  "name": "claude-code-agent-toolkit",
+  "owner": {
+    "name": "Chirag Jain"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Shareable agent toolkit for Claude Code — skills, hooks, and MCP servers; anything packageable as a Claude Code plugin. Add this marketplace once and stay current as Chirag ships updates."
+  },
+  "plugins": [
+    {
+      "name": "openai-image-generation",
+      "source": {
+        "source": "github",
+        "repo": "chirag2653/openai-image-generation"
+      },
+      "description": "Generate images with OpenAI's gpt-image-2 via a tested Python CLI — --json mode, exit-code contract, and 4-tier API-key discovery, driven from SKILL.md.",
+      "category": "media",
+      "tags": ["images", "openai", "gpt-image", "cli"]
+    },
+    {
+      "name": "gemini-image-generation",
+      "source": {
+        "source": "github",
+        "repo": "chirag2653/gemini-image-generation"
+      },
+      "description": "Generate images with Google's Gemini image-preview models via a tested Node.js CLI. Every Gemini image API knob is exposed as a flag, driven from SKILL.md.",
+      "category": "media",
+      "tags": ["images", "gemini", "google", "cli"]
+    },
+    {
+      "name": "website-to-skill-folder",
+      "source": {
+        "source": "github",
+        "repo": "chirag2653/website-to-skill-folder"
+      },
+      "description": "Convert any website into an AI-searchable skill folder — scrapes pages via Firecrawl and generates ripgrep-searchable markdown with YAML frontmatter that agents can search without loading every page.",
+      "category": "productivity",
+      "tags": ["scraping", "skills", "knowledge-base", "firecrawl"]
+    }
+  ]
+}

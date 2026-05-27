@@ -2,7 +2,7 @@
 
 A shareable **plugin marketplace for [Claude Code](https://claude.com/claude-code)** — a single place to install and stay current on Chirag Jain's agent extensions: skills, and (over time) hooks, MCP servers, and slash commands. Anything that can be packaged as a Claude Code plugin lives here.
 
-Add the marketplace once, install what you want, and you'll automatically pick up updates whenever a plugin is improved — no re-cloning, no chasing links.
+Add the marketplace once, install what you want, then **flip on auto-update for this marketplace** (one-time, see [Staying updated](#staying-updated)) — and from then on every new Claude Code session pulls the latest plugin versions automatically. No re-cloning, no chasing links.
 
 ## Install
 
@@ -24,13 +24,32 @@ Or just run `/plugin` for the interactive browser (Discover / Installed / Market
 
 ## Staying updated
 
-These plugins intentionally **omit a pinned version**, so each one tracks its source repo's latest commit. To pull the newest versions:
+These plugins intentionally **omit a pinned version**, so each one tracks its source repo's latest commit — every push becomes a new version Claude Code can pick up. How that update reaches your machine depends on a one-time per-marketplace setting:
+
+### Option A — Auto-update (recommended; set once and forget)
+
+Third-party marketplaces like this one ship with **auto-update OFF by default** in Claude Code. Turn it on once:
 
 ```
-/plugin marketplace update claude-code-agent-toolkit
+/plugin
 ```
 
-Claude Code also refreshes marketplaces at startup, so you'll generally get updates automatically.
+In the plugin manager, go to **Marketplaces** → select **claude-code-agent-toolkit** → **Enable auto-update**.
+
+After that, Claude Code refreshes this marketplace and pulls new plugin versions **at the start of every new session** — any new terminal you launch `claude` in, any new IDE window, any restart. If a plugin's hooks / MCP / LSP components changed, you'll see a notification to run `/reload-plugins`; pure skill updates just take effect on the next session.
+
+### Option B — Manual update (no opt-in required)
+
+Pull the latest catalog + plugin files on demand:
+
+```
+/plugin marketplace update claude-code-agent-toolkit   # refresh the catalog
+/plugin update <plugin-name>                           # apply the update, e.g. openai-image-generation
+```
+
+### Heads-up: updates don't apply mid-session
+
+Whether automatic or manual, updates land in a **new** cache directory at `~/.claude/plugins/cache/<plugin-id>-<sha>/`. Your *current* Claude Code session keeps using the version it loaded at startup until you restart Claude Code or run `/reload-plugins`. The previous cached version is kept for 7 days so concurrent sessions don't break, then auto-removed.
 
 ## What's inside
 

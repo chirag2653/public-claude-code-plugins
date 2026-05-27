@@ -4,7 +4,6 @@
     "name": "Chirag Jain"
   },
   "metadata": {
-    "version": "1.0.0",
     "description": "Shareable agent toolkit for Claude Code — skills, hooks, and MCP servers; anything packageable as a Claude Code plugin. Add this marketplace once and stay current as Chirag ships updates."
   },
   "plugins": [

@@ -34,13 +34,13 @@ Claude Code also refreshes marketplaces at startup, so you'll generally get upda
 
 ## What's inside
 
-| Plugin | What it does |
-|---|---|
-| **openai-image-generation** | Generate images with OpenAI's `gpt-image-2` via a tested Python CLI (`--json` mode, exit-code contract, 4-tier API-key discovery). |
-| **gemini-image-generation** | Generate images with Google's Gemini image-preview models via a tested Node.js CLI. Every Gemini image API knob exposed as a flag. |
-| **website-to-skill-folder** | Turn any website into an AI-searchable skill folder — scrapes via Firecrawl into ripgrep-searchable markdown with YAML frontmatter. |
+| Plugin | What it does | Requirements |
+|---|---|---|
+| **openai-image-generation** | Generate images with OpenAI's `gpt-image-2` via a tested Python CLI (`--json` mode, exit-code contract, 4-tier API-key discovery). | Python 3.10+, `OPENAI_API_KEY`, `pip install openai` |
+| **gemini-image-generation** | Generate images with Google's Gemini image-preview models via a tested Node.js CLI. Every Gemini image API knob exposed as a flag. | Node.js ≥ 18, `GEMINI_API_KEY` (no npm deps) |
+| **website-to-skill-folder** | Turn any website into an AI-searchable skill folder — scrapes via Firecrawl into ripgrep-searchable markdown with YAML frontmatter. | Python 3, an authenticated `gh` CLI, a [Firecrawl](https://firecrawl.dev) API key |
 
-Each plugin lives in its own repository under [`chirag2653`](https://github.com/chirag2653); this repo is just the catalog that points at them.
+Each plugin lives in its own repository under [`chirag2653`](https://github.com/chirag2653); this repo is just the catalog that points at them. Each plugin's own README and `SKILL.md` cover its setup in full — the **Requirements** column above is just the at-a-glance list of what you'll need configured before first use.
 
 ## License
 

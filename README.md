@@ -1,4 +1,4 @@
-# Claude Code Agent Toolkit
+# Public Claude Code Plugins
 
 A shareable **plugin marketplace for [Claude Code](https://claude.com/claude-code)** — a single place to install and stay current on Chirag Jain's agent extensions: skills, and (over time) hooks, MCP servers, and slash commands. Anything that can be packaged as a Claude Code plugin lives here.
 
@@ -9,15 +9,15 @@ Add the marketplace once, install what you want, then **flip on auto-update for 
 In Claude Code, add the marketplace:
 
 ```
-/plugin marketplace add chirag2653/claude-code-agent-toolkit
+/plugin marketplace add chirag2653/public-claude-code-plugins
 ```
 
 Then install any plugin from it:
 
 ```
-/plugin install openai-image-generation@claude-code-agent-toolkit
-/plugin install gemini-image-generation@claude-code-agent-toolkit
-/plugin install website-to-skill-folder@claude-code-agent-toolkit
+/plugin install openai-image-generation@public-claude-code-plugins
+/plugin install gemini-image-generation@public-claude-code-plugins
+/plugin install website-to-skill-folder@public-claude-code-plugins
 ```
 
 Or just run `/plugin` for the interactive browser (Discover / Installed / Marketplaces tabs).
@@ -34,7 +34,7 @@ Third-party marketplaces like this one ship with **auto-update OFF by default** 
 /plugin
 ```
 
-In the plugin manager, go to **Marketplaces** → select **claude-code-agent-toolkit** → **Enable auto-update**.
+In the plugin manager, go to **Marketplaces** → select **public-claude-code-plugins** → **Enable auto-update**.
 
 After that, Claude Code refreshes this marketplace and pulls new plugin versions **at the start of every new session** — any new terminal you launch `claude` in, any new IDE window, any restart. If a plugin's hooks / MCP / LSP components changed, you'll see a notification to run `/reload-plugins`; pure skill updates just take effect on the next session.
 
@@ -43,7 +43,7 @@ After that, Claude Code refreshes this marketplace and pulls new plugin versions
 Pull the latest catalog + plugin files on demand:
 
 ```
-/plugin marketplace update claude-code-agent-toolkit   # refresh the catalog
+/plugin marketplace update public-claude-code-plugins   # refresh the catalog
 /plugin update <plugin-name>                           # apply the update, e.g. openai-image-generation
 ```
 

@@ -53,7 +53,7 @@
         "source": "github",
         "repo": "chirag2653/whatsapp-notify"
       },
-      "description": "🔒 invite-only — Two-way personal WhatsApp channel for Claude Code via Twilio. Send text/image/screenshot notifications and read replies (voice notes transcribed with Whisper). Dependency-free Node.js — runs on Claude Code for the web too. Self-onboarding preflight so it never asks for keys it already has.",
+      "description": "Two-way personal WhatsApp channel for Claude Code via Twilio. Send text/image/screenshot notifications and read replies (voice notes transcribed with Whisper). Dependency-free Node.js — runs on Claude Code for the web too. Self-onboarding preflight so it never asks for keys it already has.",
       "category": "productivity",
       "tags": ["whatsapp", "twilio", "notifications", "messaging", "voice"]
     }

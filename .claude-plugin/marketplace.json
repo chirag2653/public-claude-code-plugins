@@ -46,6 +46,16 @@
       "description": "Turn one activity clip (a kid/person doing or learning something, often narrated on mic) into a polished vertical YouTube Short — Gemini understands it, ffmpeg cuts a hook→payoff micro-story, Remotion brands it with motion-text + emoji, and whisper-1 writes an SRT caption sidecar. One clip → one Short.",
       "category": "media",
       "tags": ["video", "shorts", "gemini", "ffmpeg", "remotion"]
+    },
+    {
+      "name": "whatsapp-notify",
+      "source": {
+        "source": "github",
+        "repo": "chirag2653/whatsapp-notify"
+      },
+      "description": "🔒 invite-only — Two-way personal WhatsApp channel for Claude Code via Twilio. Send text/image/screenshot notifications and read replies (voice notes transcribed with Whisper). Dependency-free Node.js — runs on Claude Code for the web too. Self-onboarding preflight so it never asks for keys it already has.",
+      "category": "productivity",
+      "tags": ["whatsapp", "twilio", "notifications", "messaging", "voice"]
     }
   ]
 }

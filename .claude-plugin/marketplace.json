@@ -38,16 +38,6 @@
       "tags": ["scraping", "skills", "knowledge-base", "firecrawl"]
     },
     {
-      "name": "coco-activity-clip-to-shorts-maker",
-      "source": {
-        "source": "github",
-        "repo": "chirag2653/coco-activity-clip-to-shorts-maker"
-      },
-      "description": "Turn one activity clip (a kid/person doing or learning something, often narrated on mic) into a polished vertical YouTube Short — Gemini understands it, ffmpeg cuts a hook→payoff micro-story, Remotion brands it with motion-text + emoji, and whisper-1 writes an SRT caption sidecar. One clip → one Short.",
-      "category": "media",
-      "tags": ["video", "shorts", "gemini", "ffmpeg", "remotion"]
-    },
-    {
       "name": "whatsapp-notify",
       "source": {
         "source": "github",

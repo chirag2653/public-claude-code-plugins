@@ -15,7 +15,12 @@
       },
       "description": "Generate images with OpenAI's gpt-image-2 via a tested Python CLI — --json mode, exit-code contract, and 4-tier API-key discovery, driven from SKILL.md.",
       "category": "media",
-      "tags": ["images", "openai", "gpt-image", "cli"]
+      "tags": [
+        "images",
+        "openai",
+        "gpt-image",
+        "cli"
+      ]
     },
     {
       "name": "gemini-image-generation",
@@ -25,7 +30,12 @@
       },
       "description": "Generate images with Google's Gemini image-preview models via a tested Node.js CLI. Every Gemini image API knob is exposed as a flag, driven from SKILL.md.",
       "category": "media",
-      "tags": ["images", "gemini", "google", "cli"]
+      "tags": [
+        "images",
+        "gemini",
+        "google",
+        "cli"
+      ]
     },
     {
       "name": "website-to-skill-folder",
@@ -35,7 +45,12 @@
       },
       "description": "Convert any website into an AI-searchable skill folder — scrapes pages via Firecrawl and generates ripgrep-searchable markdown with YAML frontmatter that agents can search without loading every page.",
       "category": "productivity",
-      "tags": ["scraping", "skills", "knowledge-base", "firecrawl"]
+      "tags": [
+        "scraping",
+        "skills",
+        "knowledge-base",
+        "firecrawl"
+      ]
     },
     {
       "name": "whatsapp-notify",
@@ -45,7 +60,29 @@
       },
       "description": "Two-way personal WhatsApp channel for Claude Code via Twilio. Send text/image/screenshot notifications and read replies (voice notes transcribed with Whisper). Dependency-free Node.js — runs on Claude Code for the web too. Self-onboarding preflight so it never asks for keys it already has.",
       "category": "productivity",
-      "tags": ["whatsapp", "twilio", "notifications", "messaging", "voice"]
+      "tags": [
+        "whatsapp",
+        "twilio",
+        "notifications",
+        "messaging",
+        "voice"
+      ]
+    },
+    {
+      "name": "seedance-video",
+      "source": {
+        "source": "github",
+        "repo": "chirag2653/seedance-video"
+      },
+      "description": "Generate video with ByteDance Seedance 2.5 via OpenRouter. Named presets for every common shape, the full flag surface, a free preflight on OPENROUTER_API_KEY, and measured pricing. Needs only the env key and Node 18+.",
+      "category": "productivity",
+      "tags": [
+        "video",
+        "seedance",
+        "openrouter",
+        "generation",
+        "bytedance"
+      ]
     }
   ]
 }
